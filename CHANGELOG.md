@@ -3,9 +3,13 @@ SwiftyRSA Changelog
 
 # [master]
 
-# [1.6.0]
+# [1.6.1]
 
- - Migrated to minimum requirements of Swift 5.0 and Xcode 10.2.
+ - Set minimum deployment target to iOS 10.
+
+ # [1.6.0]
+
+  - Migrated to minimum requirements of Swift 5.0 and Xcode 10.2.
 
 # [1.5.0]
 
@@ -37,7 +41,7 @@ SwiftyRSA Changelog
 
     - Other methods of integration – like Carthage – are unaffected.
     - In Swift, `ClearMessage.verify` now returns a boolean instead of a `VerificationResult`.
- 
+
  - Fixed an issue that prevented private keys from loading if they contained an ASN1 header.
    [#71](https://github.com/TakeScoop/SwiftyRSA/issues/71)
  - Fixed an issue that prevented public/private keys from loading if their integers were represented with an Octet String ASN1 node.
@@ -48,7 +52,7 @@ SwiftyRSA Changelog
  - Fixed Carthage integration by running SwiftLint only if it exists in a Pods directory.
    [#66](https://github.com/TakeScoop/SwiftyRSA/issues/66)
    [#65](https://github.com/TakeScoop/SwiftyRSA/issues/65)
-   
+
 # [1.1.0]
 
  - `PublicKey` and `PrivateKey` now expose their keychain reference and the data they were created with, in the `reference` and `originalData` fields.
